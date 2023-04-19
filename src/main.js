@@ -12,8 +12,8 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 Vue.prototype.$supabase = createClient(
-  process.env.VUE_APP_SUPABASE_URL,
-  process.env.VUE_APP_SUPABASE_PUBLIC_KEY,
+  process.env.supabaseUrl,
+  process.env.supabasepublickey,
 );
 
 const router = new VueRouter({
